@@ -155,7 +155,7 @@ class UI:
             cellValue = self.field.field[i[0]][i[1]]
             cellPrevValue = self.field.prevField[i[0]][i[1]]
             if cellValue == 1 and cellPrevValue == 0:
-#=======Вот здесь, при работе метода айтемконфиг в потоке,почему-то обрабатывается в несколько раз дольше чем, без потока
+#=======Вот здесь, при работе метода айтемконфиг в потоке,почему-то обрабатывается в несколько раз дольше, чем без потока
                 self.canvas.itemconfig(cell, fill="black")
             elif cellValue == 0 and cellPrevValue == 1:
                 self.canvas.itemconfig(cell, fill="white")
